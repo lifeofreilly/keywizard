@@ -1,7 +1,7 @@
 <#-- @ftlvariable name="" type="com.gmail.lifeofreilly.keywizard.views.KeyWizardView" -->
 <#escape x as x?html>
 <head>
-    <style>
+    <style type="text/css">
         table a:link {
             color: #666;
             font-weight: bold;
@@ -121,7 +121,7 @@
 <table cellspacing='0'>
     <thead>
     <tr>
-        <th>Key</th>
+        <th>Field</th>
         <th>Value</th>
     </tr>
     </thead>
@@ -143,7 +143,7 @@
         <td>${keyRepresentation.wifKey}</td>
     </tr>
     <tr>
-        <td>Info</td>
+        <td>Address Info</td>
         <td><a href="${keyRepresentation.addressInfo}">Address Info</a></td>
     </tr>
     <tbody>
