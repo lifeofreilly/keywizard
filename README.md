@@ -1,6 +1,6 @@
 # keywizard
 A simple dropwizard application that generates a new bitcoin address and associated keys
 
-![View(./screenshots/view.jpg?raw=true "View")
+![View](/screenshots/view.jpeg?raw=true "View")
 
-![API](./rscreenshots/api.jpg?raw=true "API")
+![API](/screenshots/api.jpeg?raw=true "API")
