@@ -4,6 +4,11 @@ import com.codahale.metrics.health.HealthCheck;
 import com.gmail.lifeofreilly.keywizard.api.KeyRepresentation;
 import com.gmail.lifeofreilly.keywizard.resources.KeyWizardResource;
 
+/**
+ * Verifies that a valid bitcoin addresses is generated.
+ * Health checks give you a way of adding small tests to your application.
+ * Health checks can be accessed at http://[host]:[adminport]/healthcheck
+ */
 public class KeyWizardHealthCheck extends HealthCheck {
 
     @Override

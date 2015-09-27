@@ -12,16 +12,30 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
+/**
+ * Provides a resource which responds to GET requests and provides a HTML representation of a KeyRepresentation.
+ * Resource classes model the resources exposed in the RESTful API.
+ */
 @Path("/")
 @Produces(MediaType.TEXT_HTML)
 public class KeyWizardViewResource {
     private static final NetworkParameters NET_PARAMS = MainNetParams.get();
     private final String baseURL;
 
+    /**
+     * The sole constructor for a KeyWizardViewResource object
+     *
+     * @param baseURL the base url for additional address information
+     */
     public KeyWizardViewResource(String baseURL) {
         this.baseURL = baseURL;
     }
 
+    /**
+     * Generates a new KeyRepresentation when a GET request is made
+     *
+     * @return the KeyRepresentation
+     */
     @GET
     @Timed
     public KeyWizardView getKeyWizard() {
