@@ -35,6 +35,10 @@ Running as a DropWizard application:
 Running as a docker container:
 > docker run -d -p 0.0.0.0:9080:9080 -p 0.0.0.0:9081:9081 keywizard
 
+Note: If you are using VirtualBox on the mac, you may need to enable port forwarding to access the application in a browser. To enable port forwarding: VirtualBox > Settings > Network > Port Forwarding > New > (TCP | Host Port | Guest Port)
+
+![Port Forwarding](/screenshots/vbox.jpeg?raw=true "Port Forwarding")
+
 Example Output:
 -------------------------
 
