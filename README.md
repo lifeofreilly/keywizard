@@ -10,6 +10,10 @@ Prerequisites:
 * Docker (optional)
 * For additional dependency information refer to pom.xml
 
+Configuration:
+-------------------------
+Configuration information is defined at: ./keywizard.yml 
+
 Build Instructions:
 -------------------------
 
@@ -26,31 +30,26 @@ Usage:
 -------------------------
 
 Running as a DropWizard application:
-
 > java -jar target/artifacts/keywizard-1.0-SNAPSHOT.jar server keywizard.yml
 
 Running as a docker container:
-
+> docker run -d -p 0.0.0.0:9080:9080 -p 0.0.0.0:9081:9081 keywizard
 
 Example Output:
 -------------------------
 
-http://localhost:9080/
 ![View](/screenshots/view.jpeg?raw=true "View")
-
-http://localhost:9080/api
 ![API](/screenshots/api.jpeg?raw=true "API")
 
 DropWizard Health Check:
 -------------------------
 
-Execute health check:
-http://localhost:9081/healthcheck?pretty=true
+![Health Check](/screenshots/health.jpeg?raw=true "Health Check")
 
 Limitations:
 -------------------------
 
-* The example is http only. If you host this service you must provide your own keys to enable https.
+* The current configuration is for http only. If you wish to enable https, please see ./keywizard.yml
 
 License
 -------------------------
